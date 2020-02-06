@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>Document</title>
-  </head>
-  <body>
-    <section class="overlay">
-      <form>
-        <h1>My Contacts</h1>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" />
-        <label for="email">Email</label>
-        <input type="text" id="email" name="name" />
-        <label for="phone">Phone</label>
-        <input type="text" id="phone" name="name" />
-        <label for="relation">Relation</label>
-        <select name="relation" id="relation">
-          <option value="">choose one</option>
-          <option value="friend">comrade</option>
-          <option value="parent">parent</option>
-          <option value="brother">brother</option>
-        </select>
-        <button class="add">Add</button>
-      </form>
-      <section class="cards"></section>
-    </section>
-    <script
-      src="https://kit.fontawesome.com/444a4e2933.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <i class="fas fa-trash"></i> -->
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="formContainer">
+    <h1>My contacts</h1>
+    <label for="nameInput">name</label>
+    <input id="nameInput" />
+    <label for="emailInput">email</label>
+    <input id="emailInput" />
+    <label for="phoneInput">phone</label>
+    <input id="phoneInput" />
+    <albel for="relationinput">relation</albel>
+    <input id="relationInput" />
+    <button id="formButton">Add</button>
+  </div>
+  <div id="contactsContainer"> </div>
+  <script src="app.js"></script>
+</body>
+
 </html>
